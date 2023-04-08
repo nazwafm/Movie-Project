@@ -7,11 +7,11 @@ from pymongo import MongoClient
 import requests
 from bs4 import BeautifulSoup
 
-<<<<<<< HEAD
+
 dotenv_path = join(dirname(__file__), '.env')
-=======
+
 dotenv_path = join(dirname(__file__), ".env")
->>>>>>> origin/main
+
 load_dotenv(dotenv_path)
 
 MONGODB_URL = os.environ.get("MONGODB_URL")
@@ -22,7 +22,7 @@ db = client[DB_NAME]
 
 app = Flask(__name__)
 
-<<<<<<< HEAD
+
 @app.route('/')
 def home():
     return render_template('index.html')
@@ -59,7 +59,7 @@ def movie_get():
 
 if __name__ == '__main__':
     app.run('0.0.0.0', port=5000, debug=True)
-=======
+
 
 @app.route("/")
 def home():
@@ -102,4 +102,3 @@ def movie_get():
 
 if __name__ == "__main__":
     app.run("0.0.0.0", port=5000, debug=True)
->>>>>>> origin/main
